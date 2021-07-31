@@ -1,9 +1,10 @@
-const { route } = require("./api");
-
 const router = require("express").Router();
+const { Post, User, Comment } = require("../models");
 
 router.get("/", (req, res) => {
-  res.render("login");
+  console.log(req.session);
+  const { loggedIn } = req.session;
+  res.render("dashboard", { loggedIn });
 });
 
 module.exports = router;
