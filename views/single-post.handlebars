@@ -2,16 +2,21 @@
   <li>
     {{post.title}},
     {{post.content}}
+    {{post.user.username}}
     {{format_date post.created_at}}
   </li>
 </ol>
 
+{{> comments post.comments}}
+
 <form class="comment-form">
   <div>
-    <textarea name="comment-body"></textarea>
+    <textarea name="comment-body" id="comment-text"></textarea>
   </div>
 
   <div>
     <button type="submit">add comment</button>
   </div>
 </form>
+
+<script src="/javascript/comment.js"></script>

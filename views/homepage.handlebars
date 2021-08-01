@@ -1,7 +1,8 @@
 <ol>
   {{#each posts}}
     <li>
-      <a href="/comments/{{id}}">{{title}}</a>,
+      <a href="/api/posts/{{id}}">{{title}}</a>,
+      {{user.username}},
       {{format_date created_at}}
     </li>
   {{/each}}
