@@ -2,7 +2,7 @@ async function commentFormHandler(event) {
   event.preventDefault();
 
   const comment_text = document.querySelector("#comment-text").value.trim();
-  var post_id = window.location.pathname.split("/")[3];
+  const post_id = window.location.pathname.split("/")[3];
 
   console.log(post_id);
 

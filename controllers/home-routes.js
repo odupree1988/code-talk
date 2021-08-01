@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 router.get("/", (req, res) => {
   Post.findAll({
-    attributes: ["id", "title", "created_at"],
+    attributes: ["id", "title", "content", "created_at"],
     include: {
       model: User,
       attributes: ["username"],

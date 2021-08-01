@@ -2,6 +2,7 @@
   {{#each posts}}
     <li>
       <a href="/api/posts/{{id}}">{{title}}</a>,
+      {{content}},
       {{user.username}},
       {{format_date created_at}}
     </li>

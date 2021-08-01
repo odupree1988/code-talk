@@ -1,11 +1,9 @@
-<ol>
-  <li>
+<h1>
     {{post.title}},
     {{post.content}}
     {{post.user.username}}
     {{format_date post.created_at}}
-  </li>
-</ol>
+</h1>
 
 {{> comments post.comments}}
 
