@@ -46,6 +46,7 @@ router.post("/", (req, res) => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
         req.session.loggedIn = true;
+        // req.session.expiration = Date.now() + (1000 * 5);
 
         res.json(dbUserData);
       });
@@ -78,6 +79,7 @@ router.post("/login", (req, res) => {
       req.session.user_id = dbUserData.id;
       req.session.username = dbUserData.username;
       req.session.loggedIn = true;
+      // req.session.expiration = Date.now() + (1000 * 5);
 
       res.json({ user: dbUserData, message: "Login successful!" });
     });
