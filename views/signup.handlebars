@@ -1,21 +1,27 @@
 <form class="signup-form">
-  <div>
-    <label for="username-signup">USERNAME</label>
+  <div class="form-group mb-2">
+    <label
+      for="username-signup"
+      class="col-sm-2 col-form-label"
+    >USERNAME</label>
     <input type="text" id="username-signup" />
   </div>
   <div>
-    <label for="email-signup">EMAIL</label>
+    <label for="email-signup" class="col-sm-2 col-form-label">EMAIL</label>
     <input type="text" id="email-signup" />
   </div>
   <div>
-    <label for="password-signup">PASSWORD</label>
+    <label
+      for="password-signup"
+      class="col-sm-2 col-form-label"
+    >PASSWORD</label>
     <input type="password" id="password-signup" />
   </div>
   <div>
-    <button type="submit">SIGNUP</button>
+    <button type="submit" class="btn btn-primary mt-2">SIGNUP</button>
   </div>
 </form>
 
-<a href="/login">Log In</a>
+<a href="/login" class="btn btn-primary mt-2">Log In</a>
 
 <script src="javascript/signup.js"></script>

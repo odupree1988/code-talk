@@ -1,7 +1,7 @@
 {{#if posts.length}}
 <section>
-  <h2>Your Posts</h2>
-  <ol>
+  <h2 class="text-center">Your Posts</h2>
+  <ol class="mx-auto justify-content-center alert-primary" style="width: 500px;">
     {{#each posts as |post|}}
     <li>
       {{> post-info post}}
@@ -12,18 +12,20 @@
 {{/if}}
 
 <section>
-  <h2>Create New Post</h2>
+  <h2 class="text-center">Create New Post</h2>
 
   <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
+    <div class="text-center form-group mb-2">
+      <label for="post-title" class="col-sm-2 col-form-label">Title</label>
       <input type="text" id="post-title" name="post-title" />
     </div>
-    <div>
-      <label for="post-content">Content</label>
+    <div class="text-center form-group mb-2">
+      <label for="post-content" class="col-sm-2 col-form-label">Content</label>
       <input id="post-content" name="post-content" />
     </div>
-    <button type="submit" class="btn">Create</button>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary mt-2">Create</button>
+    </div>
   </form>
 </section>
 
